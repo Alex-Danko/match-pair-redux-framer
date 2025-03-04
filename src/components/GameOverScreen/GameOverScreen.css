@@ -1,0 +1,70 @@
+.game-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.game-over-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    color: #FFF;
+    font-weight: 700;
+    z-index: 999;
+}
+
+.game-over-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1vh;
+    height: 1vh;
+    border-radius: 50%;
+    z-index: 998;
+}
+
+.game-over-title {
+    margin: 0;
+    font-size: 10vh;
+}
+
+.game-over-descr {
+    margin: 0;
+    margin-bottom: 20vh;
+    font-size: 4vh;
+}
+
+.game-over-descr-lost {
+    margin-bottom: 5vh;
+}
+
+.game-over-button {
+    background-color: #fff;
+    padding: 2vh;
+    border-radius: 3vh;
+    border: none;
+
+
+    font-size: 5vh;
+    font-weight: 900;
+
+    transition: background-color .2s ease-in-out, color .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.game-over-button:hover {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.03);
+}

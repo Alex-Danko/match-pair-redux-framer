@@ -1,0 +1,4 @@
+.gametable {
+    display: grid;
+    gap: 2vh;
+}

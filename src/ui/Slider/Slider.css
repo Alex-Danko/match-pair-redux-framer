@@ -1,0 +1,112 @@
+.slider {
+  position: relative;
+  appearance: none;
+  background: #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.vertical-slider input {
+  position: absolute;
+  width: 50vh;
+  top: 10vh;
+  left: 3vh;
+  transform: rotate(90deg);
+  transform-origin: left center;
+}
+
+.horizontal-slider input {
+  position: absolute;
+  width: 50vh;
+  top: 2vh;
+  left: 10vh;
+}
+
+/* Slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #6a11cb, #20124d);
+  height: 2vh;
+  border-radius: 10px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: linear-gradient(to right, #6a11cb, #20124d);
+  height: 2vh;
+  border-radius: 10px;
+}
+
+/* Thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -1vh;
+  /* Centers thumb on the track */
+  background-color: #ffea00;
+  height: 4vh;
+  width: 2vh;
+  border-radius: 10px;
+  transition: all .2s ease-in;
+}
+
+input[type="range"]::-moz-range-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  margin-top: -1vh;
+  /* Centers thumb on the track */
+  background-color: #ffea00;
+  height: 4vh;
+  width: 2vh;
+  border-radius: 10px;
+  transition: all .2s ease-in;
+}
+
+/* Hover & Active States */
+input[type="range"]:hover::-webkit-slider-thumb {
+  transform: scale(1.2);
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+  transform: scale(1.2);
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: 0 0 10px orange;
+}
+
+input[type="range"]:active::-moz-range-thumb {
+  box-shadow: 0 0 10px orange;
+}
+
+
+/* notches */
+
+.slider-notches {
+  position: absolute;
+  
+  display: flex;
+
+  color: #20124d;
+  font-weight: 700;
+}
+
+.horizontal-slider-notches {
+  flex-direction: row;
+  top: 6vh;
+  left: 10.8vh;
+  gap: 14.95vh;
+}
+
+.vertical-slider-notches {
+  flex-direction: column;
+  top: 10.8vh;
+  left: 6vh;
+  gap: 13.35vh;
+}

@@ -1,0 +1,55 @@
+.settings {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.1);
+    z-index: 100;
+}
+
+.settings-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5vh; /* Controls overall size */
+    height: 6vh;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+}
+
+/* Triangle shape */
+.settings-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10vh solid #20124d; /* Triangle color */
+    border-top: 5vh solid transparent;
+    border-bottom: 5vh solid transparent;
+    transition: border-left-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.settings-button:hover::before {
+    border-left-color: yellow; /* Change color on hover */
+    transform: scale(1.5); /* Keep it centered */
+}
+
+.settings-button:active::before {
+    border-left-color: red;
+    transform: scale(0.9) rotate(2deg);
+
+}
+
+/* Focus effect */
+.settings-button:focus {
+    outline: none;
+}

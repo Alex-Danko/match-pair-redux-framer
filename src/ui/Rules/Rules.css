@@ -1,0 +1,39 @@
+.rules {
+    width: 42vh;
+
+    padding: 2vh;
+    background: linear-gradient(to right, #6a11cb, #20124d);
+    position: absolute;
+    top: 11vh;
+    left: 10vh;
+    border-radius: 20px;
+}
+
+.rules-descr {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2vh;
+    color: #fff;
+    
+    text-align: justify;
+}
+
+.slider-label {
+    position: absolute;
+
+    font-size: 5vh;
+    font-weight: 700;
+    color: #fff;
+}
+
+.cols-label {
+    top: -11vh;
+    left: 8vh;
+}
+
+.rows-label {
+    top: 29vh;
+    left: -7vh;
+    transform: rotate(-90deg);
+    transform-origin: center left;
+}
